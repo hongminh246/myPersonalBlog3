@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Order - Minh's Lego Blog</title>
+    <link rel="icon" href="Images/MinhLogo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a56c516c6.js" crossorigin="anonymous"></script>
+    <script src="order.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="home.html" class="menu">Home</a>
+        <a href="about.html" class="menu">About</a>
+        <a href="benifits.html" class="menu">Benefits</a>
+        <a href="gallery.html" class="menu">Gallery</a>
+        <a href="contact.html" class="menu">Contact</a>
+        <a href="order.html" class="menu">Order</a>
+    </nav>
+    <main>
+        <h1 class="title orderTitle">Minh's Lego Blog</h1>
+        <i class="btn fas fa-shopping-cart fa-3x" id="cartIcon" onclick="openCart()"></i>
+        <h2 class="sub orderSub">Order</h2>
+        <div class="orderContainer">
+            <section class="orderSubContainer">
+                <div class="productContainer">
+                    <img class="productImage" id="productImage1" alt="Product 41713" src="Images/41713.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Olivia's Space Academy</h2>
+                    <p class="productPara">Ages: 8+ | Pieces: 757</p>
+                    <h3 class="productPrice">$119</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="quantityMinus1" onclick="minusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="quantityLabel1">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="quantityPlus1" onclick="addQuantity(this.id)">+</button>
+                    </div>
+                    <br>
+                    <button class="cartButton" id="addCartButton1" onclick="addCart(this.id)">Add to Cart</button>
+                </div>
+                <div class="productContainer">
+                    <img class="productImage" id="productImage2" alt="" src="Images/80012.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Monkey King Warrior Mech</h2>
+                    <p class="productPara">Ages: 10+ | Pieces: 1629</p>
+                    <h3 class="productPrice">$229</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="quantityMinus2" onclick="minusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="quantityLabel2">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="quantityPlus2" onclick="addQuantity(this.id)">+</button>
+                    </div>
+                    <br>
+                    <button class="cartButton" id="addCartButton2" onclick="addCart(this.id)">Add to Cart</button>
+                </div>
+                <div class="productContainer">
+                    <img class="productImage" id="productImage3" alt="" src="Images/40174.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Iconic Chess Set</h2>
+                    <p class="productPara">Ages: 9+ | Pieces: 1450</p>
+                    <h3 class="productPrice">$79</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="quantityMinus3" onclick="minusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="quantityLabel3">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="quantityPlus3" onclick="addQuantity(this.id)">+</button>
+                    </div>
+                    <br>
+                    <button class="cartButton" id="addCartButton3" onclick="addCart(this.id)">Add to Cart</button>
+                </div>
+                <div class="productContainer">
+                    <img class="productImage" id="productImage4" alt="" src="Images/76947.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Quetzalcoatlus Plane Ambush</h2>
+                    <p class="productPara">Ages: 7+ | Pieces: 306</p>
+                    <h3 class="productPrice">$79</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="quantityMinus4" onclick="minusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="quantityLabel4">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="quantityPlus4" onclick="addQuantity(this.id)">+</button>
+                    </div>
+                    <br>
+                    <button class="cartButton" id="addCartButton4" onclick="addCart(this.id)">Add to Cart</button>
+                </div>
+                <div class="productContainer">
+                    <img class="productImage" id="productImage5" alt="" src="Images/76208.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">The Goat Boat</h2>
+                    <p class="productPara">Ages: 8+ | Pieces: 564</p>
+                    <h3 class="productPrice">$79</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="quantityMinus5" onclick="minusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="quantityLabel5">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="quantityPlus5" onclick="addQuantity(this.id)">+</button>
+                    </div>
+                    <br>
+                    <button class="cartButton" id="addCartButton5" onclick="addCart(this.id)">Add to Cart</button>
+                </div>
+                <p class="orderCap">Check out more products from Lego at <a href="https://www.lego.com/en-au/" target="bLank">Lego Shopping Site</a></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="end">By Hong Minh Nguyen</p>
+    </footer>
+</body>
+
+</html>

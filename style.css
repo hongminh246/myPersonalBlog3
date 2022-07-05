@@ -1,0 +1,411 @@
+body {
+    background-color: paleturquoise;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    clear: both;
+}
+
+.sub {
+    font-size: 30px;
+}
+
+.para {
+    font-size: 20px;
+}
+
+nav {
+    background-color: teal;
+    margin: -0.5%;
+    text-align: center;
+    padding: 1%;
+    display: block;
+}
+
+.menu {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: mediumturquoise;
+    margin: 0.5% 1%;
+    padding: 1% 0%;
+    border-radius: 50px;
+    width: 14%;
+    display: inline-block;
+}
+
+.menu:hover {
+    color: black;
+}
+
+footer {
+    display: block;
+    background-color: teal;
+    margin: 0% -0.5% -0.5% -0.5%;
+    color: white;
+    padding: 1px;
+    clear: both;
+}
+
+.end {
+    font-size: 25px;
+    color: white;
+}
+
+.link {
+    font-size: 30px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.cap {
+    font-size: 25px;
+}
+
+.gal {
+    width: 45%;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.image {
+    width: 49%;
+}
+
+.paraDiv {
+    display: inline;
+}
+
+#VNimage {
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+}
+
+#Legoimage {
+    width: 30%;
+    float: right;
+}
+
+#Legoimage2 {
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+}
+
+#Legoimage3 {
+    width: 30%;
+    float: left;
+    margin-right: 32px;
+}
+
+.contactSub {
+    display: inline;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.contactInput {
+    display: inline-block;
+    width: 42%;
+    font-size: 17px;
+}
+
+.orderContainer {
+    height: 100%;
+}
+
+#contact_button {
+    font-size: 20px;
+    font-weight: bold;
+    border-width: 0px;
+    background-color: mediumturquoise;
+    border-radius: 20px;
+    color: white;
+    padding: 2%;
+}
+
+.contactDiv {
+    text-align: center;
+    margin: 1%;
+    background-color: teal;
+    padding: 1%;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.contactDiv div {
+    margin: 5px 0px;
+}
+
+#message_input {
+    display: inline-block;
+    width: 60%;
+    resize: none;
+}
+
+.productContainer {
+    display: inline-block;
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px;
+    width: 98%;
+    margin: 10px;
+    float: left;
+}
+
+.productContent {
+    display: inline-block;
+    width: 35%;
+    float: left;
+    margin: 0px 20px;
+}
+
+.productHeading {
+    font-size: 35px;
+}
+
+.productPara {
+    font-size: 20px;
+}
+
+.productPrice {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.productQuantityContainer {
+    display: inline-block;
+    padding: 10px 0px;
+    width: 22%;
+    border-radius: 30px;
+    border-color: black;
+    background-color: teal;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.productQuantityLabel {
+    display: inline-block;
+}
+
+.productQuantityLabel {
+    font-size: 40px;
+    margin: 0px 5px;
+}
+
+.productImage {
+    height: 100%;
+    float: left;
+    width: 30%;
+}
+
+.productQuantityBorder {
+    display: inline-block;
+    border-radius: 20px;
+    width: 12%;
+    padding: 5px 15px;
+    font-weight: bold;
+    background-color: white;
+    margin: 5px;
+}
+
+.productQuantityPlus,
+.productQuantityMinus {
+    font-size: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: mediumturquoise;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    width: 20%;
+}
+
+.cartButton {
+    margin: 30px 0px;
+    font-size: 40px;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 0px;
+    width: 22%;
+    background-color: mediumturquoise;
+    color: white;
+    font-weight: bold;
+}
+
+.orderCap {
+    font-size: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+.errorMessage {
+    display: none;
+    color: red;
+    margin: 0px;
+}
+
+#cartIcon {
+    float: right;
+    color: white;
+    margin: 30px 20px 10px 0px;
+    display: inline-block;
+    background-color: mediumturquoise;
+    padding: 22px 20px;
+    border-radius: 50px;
+}
+
+#cartIcon:hover {
+    color: black;
+}
+
+.orderSub {
+    display: block;
+}
+
+.orderTitle {
+    display: inline-block;
+    text-align: center;
+    margin-left: 35%;
+}
+
+.cartBody #cartIcon {
+    float: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.cartBody .orderTitle {
+    display: inline-block;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+
+.cartBody .orderContainer {
+    margin-top: 30px;
+}
+
+.cartBody .productImage {
+    width: 15%;
+}
+
+.cartBody .productHeading {
+    font-size: 30px;
+}
+
+.cartBody .productPrice {
+    font-size: 28px;
+}
+
+.cartBody .productContent {
+    width: 32%;
+}
+
+.cartBody .cartButton {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0px 5%;
+}
+
+.cartBody .productQuantityContainer {
+    width: 15%;
+}
+
+.cartBody .productQuantityLabel {
+    font-size: 30px;
+}
+
+.cartBody .productQuantityMinus,
+.cartBody .productQuantityPlus {
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+#checkoutContainer {
+    display: none;
+    text-align: center;
+}
+
+.checkoutContainer .title {
+    margin: 20px 0px;
+    padding: 0px;
+}
+
+.totalLabel {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cartTotalContainer {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 30%;
+    margin: 10px 35%;
+    float: left;
+    text-align: center;
+}
+
+.cartTitle {}
+
+.checkoutSubContainer {
+    text-align: center;
+    margin: 1% 25%;
+    background-color: teal;
+    padding: 1%;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.checkoutInput {
+    display: inline-block;
+    width: 42%;
+    font-size: 17px;
+}
+
+.checkoutError {
+    display: none;
+    color: red;
+    margin: 0px;
+}
+
+#checkoutButton {
+    margin: 30px 0px;
+    font-size: 30px;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 0px;
+    width: 30%;
+    background-color: mediumturquoise;
+    color: white;
+    font-weight: bold;
+}
+
+.checkoutSub {
+    display: inline;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.checkoutSubContainer div {
+    margin: 5px 0px;
+}
+
+#noteInput {
+    display: inline-block;
+    width: 60%;
+    resize: none;
+}

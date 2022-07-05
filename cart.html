@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Order - Minh's Lego Blog</title>
+    <link rel="icon" href="Images/MinhLogo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a56c516c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="cartBody">
+    <main>
+        <i class="btn fas fa-arrow-left-long fa-3x" id="cartIcon" onclick="goBack()"></i>
+        <h1 class="title orderTitle">Cart</h1>
+        <div class="orderContainer">
+            <section class="orderSubContainer">
+                <div class="productContainer" id="cartProductContainer1">
+                    <img class="productImage" id="cartProductImage1" alt="Product 41713" src="Images/41713.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Olivia's Space Academy</h2>
+                    <h3 class="productPrice">$119</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="cartQuantityMinus1" onclick="cartMinusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="cartQuantityLabel1">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="cartQuantityPlus1" onclick="cartAddQuantity(this.id)">+</button>
+                    </div>
+                    <button class="cartButton" id="removeCartButton1" onclick="removeProduct(this.id)">Remove from Cart</button>
+                </div>
+                <div class="productContainer" id="cartProductContainer2">
+                    <img class="productImage" id="productImage2" alt="Product 80012" src="Images/80012.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Monkey King Warrior Mech</h2>
+                    <h3 class="productPrice">$229</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="cartQuantityMinus2" onclick="cartMinusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="cartQuantityLabel2">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="cartQuantityPlus2" onclick="cartAddQuantity(this.id)">+</button>
+                    </div>
+                    <button class="cartButton" id="removeCartButton2" onclick="removeProduct(this.id)">Remove from Cart</button>
+                </div>
+                <div class="productContainer" id="cartProductContainer3">
+                    <img class="productImage" id="productImage3" alt="Product 40174" src="Images/40174.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Iconic Chess Set</h2>
+                    <h3 class="productPrice">$79</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="cartQuantityMinus3" onclick="cartMinusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="cartQuantityLabel3">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="cartQuantityPlus3" onclick="cartAddQuantity(this.id)">+</button>
+                    </div>
+                    <button class="cartButton" id="removeCartButton3" onclick="removeProduct(this.id)">Remove from Cart</button>
+                </div>
+                <div class="productContainer" id="cartProductContainer4">
+                    <img class="productImage" id="productImage4" alt="Product 76947" src="Images/76947.webp">
+                    <span class="productContent">
+                    <h3 class="productHeading">Quetzalcoatlus Plane Ambush</h2>
+                    <h3 class="productPrice">$79</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="cartQuantityMinus4" onclick="cartMinusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel" id="cartQuantityLabel4">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="cartQuantityPlus4" onclick="cartAddQuantity(this.id)">+</button>
+                    </div>
+                    <button class="cartButton" id="removeCartButton4" onclick="removeProduct(this.id)">Remove from Cart</button>
+                </div>
+                <div class="productContainer" id="cartProductContainer5">
+                    <img class="productImage" id="productImage5 " alt="Product 76208" src="Images/76208.webp ">
+                    <span class="productContent">
+                    <h3 class="productHeading">The Goat Boat</h2>
+                    <h3 class="productPrice">$79</h3>
+                    </span>
+                    <br>
+                    <div class="productQuantityContainer">
+                        <button class="productQuantityMinus" id="cartQuantityMinus5" onclick="cartMinusQuantity(this.id)">-</button>
+                        <span class="productQuantityBorder">
+                        <p class="productQuantityLabel " id="cartQuantityLabel5">1</p>
+                        </span>
+                        <button class="productQuantityPlus" id="cartQuantityPlus5" onclick="cartAddQuantity(this.id)">+</button>
+                    </div>
+                    <button class="cartButton" id="removeCartButton5" onclick="removeProduct(this.id)">Remove from Cart</button>
+                </div>
+                <div class="cartTotalContainer">
+                    <span class="totalLabel ">Total = <span id="totalPrice">$0</span></span>
+                </div>
+            </section>
+            <section id="checkoutContainer">
+                <h1 class="title cartTitle">Checkout</h1>
+                <div class="checkoutSubContainer">
+                    <div>
+                        <h3 class="checkoutSub">First name: </h3>
+                        <input class="checkoutInput" id="firstNameInput" placeholder="Please enter your first name here">
+                    </div>
+                    <p class="checkoutError" id="firstNameError">Please enter between 1 and 100 characters</p>
+                    <div>
+                        <h3 class="checkoutSub">Last name: </h3>
+                        <input class="checkoutInput" id="lastNameInput" placeholder="Please enter your last name here">
+                    </div>
+                    <p class="checkoutError" id="lastNameError">Please enter between 1 and 100 characters</p>
+                    <div>
+                        <h3 class="checkoutSub">Email Address: </h3>
+                        <input class="checkoutInput" id="emailInput" placeholder="Please enter your email address here">
+                    </div>
+                    <p class="checkoutError" id="emailError">Please enter a valid email</p>
+                    <div>
+                        <h3 class="checkoutSub">Location: </h3>
+                        <input class="checkoutInput" id="locationInput" placeholder="Please enter your location">
+                    </div>
+                    <p class="checkoutError" id="locationError">Please enter between 1 and 100 characters</p>
+                    <div>
+                        <h3 class="checkoutSub">Additional Notes: </h3>
+                    </div>
+                    <div>
+                        <textarea class="checkoutInput" id="noteInput" placeholder="Please enter some additional notes (optional)" rows="5" wrap="physical"></textarea>
+                    </div>
+                    <div>
+                        <button id="checkoutButton" onclick="checkoutCart()">Finish Checkout</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="end">By Hong Minh Nguyen</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+
+</html>
